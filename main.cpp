@@ -18,14 +18,6 @@ int main(int argc, char *argv[]) {
         std::cerr << "Path to ROM to be loaded must be given as argument\nType -help to see usage\n";
         exit(1);
     }
-    if (strcmp(argv[1], "-help") == 0) {
-        // Print the help menu
-        std::cout << "Normal usage: ./Chip8_Emulator <path_to_rom>\n"
-                  << "Other modes available:\n"
-                  << "1. Single step mode:\n"
-                  << "   Type -s flag to execute one instruction at a time, waiting for you to press enter after each cycle\n";
-        exit(0);
-    }
 
     // Loading ROM provided as argument
     Chip8 chip8;
